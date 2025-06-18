@@ -67,6 +67,8 @@ button {
 /* Result section styling */
 .result {
     background-color: #e2e2e2;
+    font-weight: bold;
+    font-size: 2rem;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
