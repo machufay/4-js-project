@@ -14,9 +14,20 @@ body {
 }
 
 button {
-    padding:20px;
+    padding: 20px;
+    height: 20px;
+    width: 500px;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+}
+
+.next {
+    padding: 20px;
+    height: 20px;
+    width: 500px;
     text-align: center;
     margin: 10px 10px 10px 10px;
+    display: none;
 }
 
 .buttons {
@@ -25,7 +36,14 @@ button {
 }
 
 /* Questions section styling */
-.questions {
+.question {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.answer {
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -33,11 +51,17 @@ button {
     display: none;
 }
 
-.questions img {
+.imageholder {
     width: 50vw;
     height: 50vh;
     border-radius: 8px;
     margin-top: 10px;
+    left: 100px;
+}
+
+.question img {
+    object-fit: cover;
+    width: 50vw;
 }
 
 /* Result section styling */
