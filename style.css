@@ -15,7 +15,7 @@ body {
 
 button {
     padding: 20px;
-    height: 20px;
+    ;
     width: 500px;
     text-align: left;
     margin: 10px 10px 10px 10px;
@@ -59,9 +59,14 @@ button {
     left: 100px;
 }
 
-.question img {
+.imageholder img {
     object-fit: cover;
-    width: 50vw;
+    width: 300px;
+    overflow: hidden;
+}
+
+.answer img {
+    width: 300px;
 }
 
 /* Result section styling */

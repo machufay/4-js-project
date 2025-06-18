@@ -44,6 +44,16 @@ let buttons = document.querySelector(".buttons");
     
 lirili1.style.display = "block"; //shows the first question
     
+let onetofour = document.querySelector(".onetofour");
+let fivetoeight = document.querySelector(".fivetoeight");
+let nine = document.querySelector(".nine");
+let ten = document.querySelector(".ten");
+
+onetofour.style.display = "none";
+fivetoeight.style.display = "none";
+nine.style.display = "none";
+ten.style.display = "none";
+
 //CODING FOR THE FOUR CHOICES
     choice1.addEventListener("click", function(){
         if (questionNumber == 1){
@@ -351,10 +361,10 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "Tung tung tung sahur";
-            choice4.innerHTML = "wrong";
+            choice1.innerHTML = "Garamararamararaman dan Madudungdung tak tuntung perkuntung";
+            choice2.innerHTML = "U din din din din dun ma din din din din";
+            choice3.innerHTML = "Tung tung tung tung tung sahur";
+            choice4.innerHTML = "Brri brri bicus dicus bombicus";
         } else if (questionNumber == 2.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -363,10 +373,10 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
+            choice1.innerHTML = "Tralaleritos";
             choice2.innerHTML = "Tralalero tralala";
-            choice3.innerHTML = "wrong";
-            choice4.innerHTML = "wrong";
+            choice3.innerHTML = "Trulimero trulichina";
+            choice4.innerHTML = "Trippi troppi";
         } else if (questionNumber == 3.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -375,9 +385,9 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "wrong";
+            choice1.innerHTML = "Troppa crocodina";
+            choice2.innerHTML = "Svinino Bombondino";
+            choice3.innerHTML = "Bardiro Crocodilo";
             choice4.innerHTML = "Bombardino crocodilo";
         } else if (questionNumber == 4.5){
             questionNumber += 0.5;
@@ -388,9 +398,9 @@ lirili1.style.display = "block"; //shows the first question
             next.style.display = "none";
             //choice text
             choice1.innerHTML = "Chimpanzini bananini";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "wrong";
-            choice4.innerHTML = "wrong";
+            choice2.innerHTML = "Trippi troppi";
+            choice3.innerHTML = "penguino cocosino";
+            choice4.innerHTML = "Elephantini cocosini";
         } else if (questionNumber == 5.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -400,9 +410,9 @@ lirili1.style.display = "block"; //shows the first question
             next.style.display = "none";
             //choice text
             choice1.innerHTML = "Trippi troppi";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "wrong";
-            choice4.innerHTML = "wrong";
+            choice2.innerHTML = "Oceanini octopussini";
+            choice3.innerHTML = "Tob tobi tob tob tobi tob";
+            choice4.innerHTML = "Trulimero trulichina";
         } else if (questionNumber == 6.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -412,9 +422,9 @@ lirili1.style.display = "block"; //shows the first question
             next.style.display = "none";
             //choice text
             choice1.innerHTML = "Brr brr patapim";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "wrong";
-            choice4.innerHTML = "wrong";
+            choice2.innerHTML = "Pi pi kiwi";
+            choice3.innerHTML = "Brr brr gangster gusini";
+            choice4.innerHTML = "Lirili larila";
         } else if (questionNumber == 7.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -423,10 +433,10 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
-            choice2.innerHTML = "wrong";
+            choice1.innerHTML = "Chimpanzini cactusini";
+            choice2.innerHTML = "Elephante de la deserte";
             choice3.innerHTML = "Fruli frula";
-            choice4.innerHTML = "wrong";
+            choice4.innerHTML = "Flamingulli-gulli-gulli";
         } else if (questionNumber == 8.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -435,10 +445,10 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
+            choice1.innerHTML = "Alcapaco Refrigerino";
             choice2.innerHTML = "Frigo camelo";
-            choice3.innerHTML = "wrong";
-            choice4.innerHTML = "wrong";
+            choice3.innerHTML = "Rhino toasterino";
+            choice4.innerHTML = "Matteooooooooooooooooooooo";
         } else if (questionNumber == 9.5){
             questionNumber += 0.5;
             console.log("question number: " + questionNumber);
@@ -447,9 +457,9 @@ lirili1.style.display = "block"; //shows the first question
             buttons.style.display = "flex";
             next.style.display = "none";
             //choice text
-            choice1.innerHTML = "wrong";
-            choice2.innerHTML = "wrong";
-            choice3.innerHTML = "wrong";
+            choice1.innerHTML = "Cocofanto planetino";
+            choice2.innerHTML = "Tracotucotulu delapeladustuz";
+            choice3.innerHTML = "Kudanile astronote";
             choice4.innerHTML = "La vaca saturno saturnita";
         } else if (questionNumber == 10.5){
             questionNumber += 0.5;
@@ -461,13 +471,17 @@ lirili1.style.display = "block"; //shows the first question
             //RESULTS
             result.style.display = "block";
             if (score <= 4){
-                result.innerHTML = score + "/10? Wow, sei davvero poco colto"
+                result.innerHTML = score + "/10? Wow, sei davvero poco colto";
+                onetofour.style.display = "block";
             } else if (score >= 5 && score <= 8){
                 result.innerHTML = "A " + score + "/10 = Avid learner"
+                fivetoeight.style.display = "block";
             } else if (score == 9) {
-                result.innerHTML = "9/10, very skilled and cultured individual"
+                result.innerHTML = "9/10, very skilled and cultured individual";
+                nine.style.display = "block";
             } else if (score == 10){
-                result.innerHTML = "perfect score, this isn't the first time you took this is it"
+                result.innerHTML = "perfect score, this isn't the first time you took this is it";
+                ten.style.display = "block";
             }
         } 
     });
